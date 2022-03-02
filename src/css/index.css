@@ -65,6 +65,7 @@ input, button {
     color: var(--pink);
     font-size: 1.25rem;
     font-weight: 700;
+    background-clip: text;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -108,7 +109,7 @@ main {
     margin-bottom: 1rem;
 }
 
-#tasks .task .content .task {
+#tasks .task .content .text {
     color: var(--light);
     font-size: 1.125rem;
     width: 100%;
@@ -125,28 +126,29 @@ main {
     margin: 0 -0.5rem;
 }
 
-#task .actions button {
+.task .actions button {
     cursor: pointer;
-    margin: 0 -0.5rem;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
     font-weight: 700;
     text-transform: uppercase;
     transition: 0.4s;
 }
 
-#task .actions button:hover {
+.task .actions button:hover {
     opacity: 0.8;
 }
 
-#task .actions button:active {
+.task .actions button:active {
     opacity: 0.6;
 }
 
 .task .actions .edit {
-    background-color: linear-gradient(to right, var(--pink), var(--purple);
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.task .action .delete {
+.task .actions .delete {
     color: crimson;
 }
