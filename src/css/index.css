@@ -109,6 +109,10 @@ main {
     margin-bottom: 1rem;
 }
 
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
 #tasks .task .content .text {
     color: var(--light);
     font-size: 1.125rem;
@@ -144,6 +148,7 @@ main {
 }
 
 .task .actions .edit {
+    background-clip: text;
     background-image: linear-gradient(to right, var(--pink), var(--purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
